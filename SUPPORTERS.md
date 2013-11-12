@@ -325,7 +325,7 @@ These brilliant people supported our Kickstarter by giving us £15 or more:
 * [Daniel Hertz](http://www.dhertz.com)
 * [Chuck Fouts](https://github.com/gnarl)
 * [Chip Warden](https://twitter.com/lgw4)
-* Ethan Schoonover
+* [Ethan Schoonover](http://ethanschoonover.com)
 * [Chi Trung Nguyen](http://www.napcaesmind.de)
 * [Danny Amey](http://www.dannyamey.com/)
 * Oscar
@@ -435,7 +435,7 @@ These wonderful people supported our Kickstarter by giving us £10 or more:
 * [Dimitar Dimitrov](http://ddimitrov.name/)
 * [Hacker School](https://www.hackerschool.com/)
 * [Franklin](http://frankl.in)
-* Wes Garrison
+* [Wes Garrison](http://databasically.com)
 * [Braulio Carreno](http://carreno.me)
 * [Derek Croft](http://www.kiindly.com)
 * [Doc Ritezel](http://ritezel.com)

@@ -3,9 +3,9 @@ require 'formula'
 # Reference: https://github.com/b4winckler/macvim/wiki/building
 class Macvim < Formula
   homepage 'http://code.google.com/p/macvim/'
-  url 'https://github.com/b4winckler/macvim/archive/snapshot-71.tar.gz'
-  version '7.4-71'
-  sha1 '09101e3e29ae517d6846159211ae64e1427b86c0'
+  url 'https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz'
+  version '7.4-72'
+  sha1 '3fb5b09d7496c8031a40e7a73374424ef6c81166'
 
   head 'https://github.com/b4winckler/macvim.git', :branch => 'master'
 
@@ -31,6 +31,9 @@ class Macvim < Formula
     # If building for 10.7 or up, make sure that CC is set to "clang".
     ENV.clang if MacOS.version >= :lion
 
+    # macvim HEAD only works with the current Ruby.framework because it builds with -framework Ruby
+    system_ruby = "/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby"
+
     args = %W[
       --with-features=huge
       --enable-multibyte
@@ -38,7 +41,7 @@ class Macvim < Formula
       --enable-perlinterp
       --enable-rubyinterp
       --enable-tclinterp
-      --with-ruby-command=#{RUBY_PATH}
+      --with-ruby-command=#{system_ruby}
       --with-tlib=ncurses
       --with-compiledby=Homebrew
       --with-local-dir=#{HOMEBREW_PREFIX}
