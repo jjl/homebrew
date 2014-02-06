@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'formula'
 
 # This is a non-functional example formula to showcase all features and
@@ -231,6 +232,9 @@ class ExampleFormula < Formula
     # you give the args separately as in the line below, otherwise a subshell
     # has to be opened first.
     system "./bootstrap.sh", "--arg1", "--prefix=#{prefix}"
+
+    # Sometimes, you need to just touch a file
+    touch prefix/"filename"
 
     # For Cmake, we have some necessary defaults in `std_cmake_args`:
     system "cmake", ".",  *std_cmake_args
